@@ -1,3 +1,5 @@
+# requires ACCOUNTADMIN role
+
 resource "snowflake_account_parameter" "autocommit_parameter" {
   key   = "AUTOCOMMIT"
   value = "true"
