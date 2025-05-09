@@ -1,15 +1,17 @@
 terraform {
   required_providers {
     snowflake = {
-      source  = "Snowflake-Labs/snowflake"
-      version = "~> 1.0.3"
+      source  = "snowflakedb/snowflake"
     }
   }
 }
 
 provider "snowflake" {
-  #snowflake_organization_name = var.snowflake_organization_name
-  #snowflake_account_name = var.snowflake_account_name
+  organization_name = "sfsenorthamerica"
+  account_name = "demo_aervits"
+  authenticator = "SNOWFLAKE_JWT"
+  user = "tf-snow"
   role = "SYSADMIN"
   warehouse = "compute_wh"
+  #preview_features_enabled = ["snowflake_password_policy_resource"]
 }
