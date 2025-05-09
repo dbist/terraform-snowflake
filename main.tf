@@ -7,11 +7,11 @@ terraform {
 }
 
 provider "snowflake" {
-  organization_name = "sfsenorthamerica"
-  account_name = "demo_aervits"
-  authenticator = "SNOWFLAKE_JWT"
-  user = "tf-snow"
-  role = "SYSADMIN"
-  warehouse = "compute_wh"
+  organization_name = "**********"
+  account_name = "**********"
+  authenticator = "**********"
+  user = "**********"
+  role = "**********"
+  warehouse = "**********"
   #preview_features_enabled = ["snowflake_password_policy_resource"]
 }
